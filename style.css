@@ -1,0 +1,220 @@
+html,
+body {
+    background-color: black;
+    color: white;
+    background-image: url("./fantasy.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    border: white solid 5pt;
+    border-collapse: collapse;
+    background-color: black;
+    user-select: none;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari, Chrome, Opera, Samsung */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Edge, IE */
+    user-select: none;
+    /* Modern browsers */
+}
+
+td {
+    width: 40pt;
+    height: 40pt;
+    border: white solid 3pt;
+    text-align: center;
+    font-size: 20pt;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari, Chrome, Opera, Samsung */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Edge, IE */
+    user-select: none;
+    /* Modern browsers */
+}
+
+#buttonDiv {
+    text-align: center;
+}
+
+.win {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 1;
+    background-image: url("./victory.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+#winButton {
+    color: steelblue;
+}
+
+#info {
+    background-color: darkslategray;
+    padding: 1vh;
+    border: 0.4vh solid rgb(27, 46, 46);
+    font-size: 1vw;
+    border-radius: 15px;
+    line-height: 12pt;
+    margin: 0pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightgrey;
+}
+
+#saveButton {
+    color: green;
+}
+
+#loadButton {
+    color: gray;
+}
+
+#heroDiv {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aquamarine;
+    text-shadow: 2pt 2pt black;
+}
+
+#heroDiv img {
+    border: 0.6vh solid white;
+    height: 25vh;
+    transition: 0.5s all;
+}
+
+#heroDiv img:hover {
+    height: 30vh;
+}
+
+#decisionDiv {
+    position: fixed;
+    width: 300pt;
+    height: 100pt;
+    top: calc(50% - 100pt);
+    left: calc(50% - 150pt);
+    background-color: gray;
+    font-size: 16pt;
+    padding-top: 6pt;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20pt;
+    border: 3pt solid white;
+}
+
+#overwrite {
+    width: 100pt;
+    height: 30pt;
+    font-size: 20pt;
+    margin: 0pt;
+    margin-bottom: 6pt;
+
+    color: gray;
+    background-color: #E0E0E0;
+    border: 2pt solid black;
+    text-shadow: 1px 1px black;
+}
+
+
+#cancel {
+    width: 80pt;
+    height: 30pt;
+    font-size: 20pt;
+    margin: 0pt;
+    margin-bottom: 6pt;
+    color: gray;
+    background-color: #E0E0E0;
+    border: 2pt solid black;
+    text-shadow: 1px 1px black;
+}
+
+#close {
+    height: 15pt;
+    width: 30pt;
+    position: absolute;
+    right: 0pt;
+    top: 0pt;
+    border: 1pt solid white;
+    background-color: red;
+    text-align: center;
+    padding: 0pt;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 15pt;
+    opacity: 80%;
+}
+
+.mainButton {
+    border-radius: 15px;
+    transition: 0.5s all;
+
+    font-size: 3vw;
+    padding: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #E0E0E0;
+    border: 0.4vh solid black;
+    text-shadow: 2px 2px 0px black,
+        2px -2px 0px black,
+        -2px 2px 0px black,
+        -2px -2px 0px black,
+        2px 0px 0px black,
+        0px 2px 0px black,
+        -2px 0px 0px black,
+        0px -2px 0px black;
+    outline: none;
+}
+
+.mainButton:hover {
+    font-size: 4vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 4vh;
+}

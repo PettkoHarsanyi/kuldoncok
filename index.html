@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Küldöncök</title>
+    <link href="./style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="container" class="container" >
+
+        <div id="heroDiv"><img onclick="mainMenu()" style="cursor:pointer" src="./hero.jpg"></div>
+
+        <div id="buttons" class="buttonContainer">
+            <button type="button" class="mainButton" onclick="setLevel(1)" style="color: green; cursor: pointer;">KÖNNYŰ</button>
+            <button type="button" class="mainButton" onclick="setLevel(2)" style="color: orange; cursor: pointer;">KÖZEPES</button>
+            <button type="button" class="mainButton" onclick="setLevel(3)" style="color: red; cursor: pointer;">NEHÉZ</button>
+        </div>
+
+        <div id="info">
+            Készítette: Harsányi Péter
+        </div>
+    </div>
+
+    <script src="./script.js?v=1" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
